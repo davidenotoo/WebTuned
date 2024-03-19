@@ -7,10 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+
 
   <title>Web Tuned - dev solution</title>
 
@@ -28,11 +25,36 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <!-- SEO -->
+  <meta name="keywords" content="sito web, web development, SEO, ottimizzazione, parole chiave">
+  <meta name="description"
+    content="Offriamo soluzioni di sviluppo web su misura per le esigenze dei nostri clienti. Contattaci oggi per una consulenza gratuita.">
+  <meta name="geo.placename" content="Alcamo, Italia">
+  <meta name="author" content="Web Tuned">
+  <meta name="language" content="Italiano">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://webtuned.netlify.app/">
+  <meta name="geo.region" content="IT">
+
+  <meta property="og:title" content="Web Tuned - Dev Solutions">
+  <meta property="og:description"
+    content="Offriamo soluzioni di sviluppo web su misura per le esigenze dei nostri clienti. Contattaci oggi per una consulenza gratuita.">
+  <meta property="og:image" content="images/iconPhone.png">
+  <meta name="twitter:title" content="Titolo del tuo sito web">
+  <meta name="twitter:description"
+    content="Offriamo soluzioni di sviluppo web su misura per le esigenze dei nostri clienti. Contattaci oggi per una consulenza gratuita.">
+  <meta name="twitter:image" content="images/iconPhone.png">
+
+
+
+
+
+
 </head>
 
 <body>
 
-  <div class="hero_area">
+  <div class="hero_area" id="home">
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
@@ -50,22 +72,25 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home" onclick="smoothScroll('#home')">Home <span
+                    class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> Chi Siamo</a>
+                <a class="nav-link" href="#services" onclick="smoothScroll('#services')">Servizi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html">Servizi</a>
+                <a class="nav-link" href="#about" onclick="smoothScroll('#about')">Chi Siamo</a>
+
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contatti</a>
+                <a class="nav-link" href="#contacts" onclick="smoothScroll('#contacts')">Contatti</a>
               </li>
             </ul>
             <div class="quote_btn-container">
-              <a href="" class="quote_btn">
+              <a href="#contacts" onclick="smoothScroll('#contacts')" class="quote_btn">
                 Whatsapp
               </a>
             </div>
@@ -75,7 +100,7 @@
     </header>
     <!-- end header section -->
     <!-- slider section -->
-    <section class="slider_section ">
+    <section class="slider_section">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -95,7 +120,7 @@
                       Ogni settore ha le proprie esigenze. <br><br>Dal fashion alla tecnologia, sviluppiamo siti web
                       personalizzati che rispecchiano l'essenza del tuo settore e attraggono il tuo pubblico ideale </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="#contacts" onclick="smoothScroll('#contacts')" class="btn1">
                         Contattaci
                       </a>
                     </div>
@@ -123,7 +148,7 @@
                       tua visibilità e coinvolgendo il tuo pubblico di riferimento.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="#contacts" onclick="smoothScroll('#contacts')" class="btn1">
                         Contattaci
                       </a>
                     </div>
@@ -151,7 +176,7 @@
                       vetrina digitale che cattura l'attenzione e lascia un'impressione duratura.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="#contacts" onclick="smoothScroll('#contacts')" class="btn1">
                         Contattaci
                       </a>
                     </div>
@@ -173,7 +198,7 @@
   </div>
 
   <!-- service section -->
-  <section class="service_section layout_padding">
+  <section class="service_section layout_padding" id="services">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -201,7 +226,7 @@
                 <li>Pagine Essenziali</li>
               </ul>
               </p>
-              <a href="">
+              <a href="#contacts" onclick="smoothScroll('#contacts')">
                 <span>
                   Preventivo
                 </span>
@@ -229,7 +254,7 @@
                 <li>da 2 a 4 pagine</li>
               </ul>
               </p>
-              <a href="">
+              <a href="#contacts" onclick="smoothScroll('#contacts')">
                 <span>
                   Preventivo
                 </span>
@@ -260,7 +285,7 @@
                 <li>Statistiche Vendite</li>
               </ul>
               </p>
-              <a href="">
+              <a href="#contacts" onclick="smoothScroll('#contacts')">
                 <span>
                   Preventivo
                 </span>
@@ -289,7 +314,7 @@
                 <li>Reportistica Mensile</li>
               </ul>
               </p>
-              <a href="">
+              <a href="#contacts" onclick="smoothScroll('#contacts')">
                 <span>
                   Preventivo
                 </span>
@@ -300,8 +325,8 @@
         </div>
       </div>
       <div class="btn-box">
-        <a href="">
-          View More
+        <a href="#contacts" onclick="smoothScroll('#contacts')">
+          Scrivici
         </a>
       </div>
     </div>
@@ -310,33 +335,30 @@
 
   <!-- about section -->
 
-  <section class="about_section layout_padding">
-    <div class="container  ">
+  <section class="about_section layout_padding" id="about">
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
-              <h2>
-                About Us
-              </h2>
+              <h2>Chi Siamo</h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              <strong>Web Tuned</strong> è una squadra di esperti digitali appassionati della creazione di esperienze
+              online straordinarie. <br><br>Specializzati nella progettazione e sviluppo di landing page, siti web
+              e-commerce e strategie avanzate sui social media, ci impegniamo per trasformare le tue visioni in realtà
+              digitali di successo. <br><br>Nuove leve dell'informatica. <br>Offriamo soluzioni su misura per aiutarti a
+              raggiungere i tuoi obiettivi online. <br>Scegli Web Tuned e portiamo la tua presenza online al livello
+              successivo!
             </p>
-            <a href="">
-              Contattaci
-            </a>
+            <a href="#contacts" onclick="smoothScroll('#contacts')">Contattaci</a>
           </div>
         </div>
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="images/about-img.png" alt="">
+            <img src="images/iconPhone.png" alt="Logo Web Tuned">
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -349,7 +371,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Our Case Studies
+          Prodotti Rilasciati
         </h2>
       </div>
       <div class="row">
@@ -360,18 +382,18 @@
             </div>
             <div class="detail-box">
               <h5>
-                Sit amet consectetur adipisicing elit
+                lorem 1
               </h5>
               <p>
-                Alteration in some form, by injected humour, or randomised words which don't look even slightly
-                believable.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos facilis ipsa quia? Quis sint,
+                quaerat est iure odio placeat maxime qui perferendis vitae, molestias ea deserunt! Ipsam, nam cum!
               </p>
-              <a href="">
+              <!-- <a href="">
                 <span>
                   Read More
                 </span>
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -382,18 +404,18 @@
             </div>
             <div class="detail-box">
               <h5>
-                Excepturi placeat nihil eos maxime
+                lorem 2
               </h5>
               <p>
-                Alteration in some form, by injected humour, or randomised words which don't look even slightly
-                believable.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, adipisci perspiciatis. Doloremque ex
+                tempora repudiandae nihil exercitationem mollitia odio reiciendis ea vitae! 
               </p>
-              <a href="">
+              <!-- <a href="">
                 <span>
                   Read More
                 </span>
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -426,7 +448,7 @@
                     <div class="client_info">
                       <div class="client_name">
                         <h5>
-                          Morojink
+                          ENZO
                         </h5>
                         <h6>
                           Customer
@@ -461,7 +483,7 @@
                     <div class="client_info">
                       <div class="client_name">
                         <h5>
-                          Morojink
+                          GIGI
                         </h5>
                         <h6>
                           Customer
@@ -496,7 +518,7 @@
                     <div class="client_info">
                       <div class="client_name">
                         <h5>
-                          Morojink
+                          FRANCO
                         </h5>
                         <h6>
                           Customer
@@ -533,31 +555,33 @@
 
   <!-- contact section -->
 
-  <section class="contact_section layout_padding">
+  <section class="contact_section layout_padding" id="contacts">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-5 col-lg-4 offset-md-1">
           <div class="form_container">
             <div class="heading_container">
               <h2>
-                Request A Call back
+                Contattaci su Whatsapp
               </h2>
             </div>
             <form action="">
               <div>
-                <input type="text" placeholder="Full Name " />
+                <input type="text" id="nome" name="nome" autocomplete="name" required placeholder="Nome e Cognome " />
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" id="email" name="email" autocomplete="email" required placeholder="Email" />
               </div>
               <div>
-                <input type="text" placeholder="Phone number" />
+                <input type="text" id="numero-cellulare" name="numero-cellulare" autocomplete="tel" required
+                  placeholder="Numero di telefono" />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" id="messaggio" name="messaggio" required class="message-box"
+                  placeholder="Scrivi in poche righe la tua idea..." />
               </div>
               <div class="d-flex ">
-                <button>
+                <button onclick="inviaOrdine()">
                   SEND
                 </button>
               </div>
@@ -578,6 +602,31 @@
     </div>
   </section>
 
+  <script>
+
+
+    function inviaOrdine() {
+      var nome = document.getElementById('nome').value;
+      var numeroCellulare = document.getElementById('numero-cellulare').value;
+      var email = document.getElementById('email').value;
+      var messaggio = document.getElementById('messaggio').value;
+
+      // Verifica che tutti i campi obbligatori siano compilati
+      if (!nome || !numeroCellulare || !email || !messaggio) {
+        alert('Compila tutti i campi obbligatori prima di procedere');
+        return;
+      }
+
+      var numeroWhatsApp = '+393275528211';
+
+      var linkWhatsApp = 'https://wa.me/' + numeroWhatsApp + '?text=Ordine%20da%3A%20' +
+        encodeURIComponent(nome) + '%0ANumero%20di%20Cellulare%3A%20' + encodeURIComponent(numeroCellulare) +
+        '%0AEmail%3A%20' + encodeURIComponent(email) + '%0AMessaggio%3A%20' + encodeURIComponent(messaggio);
+
+      window.open(linkWhatsApp, '_blank');
+    }
+
+  </script>
   <!-- end contact section -->
 
   <div class="footer_container">
@@ -588,74 +637,39 @@
         <div class="row">
           <div class="col-md-6 col-lg-3 ">
             <div class="info_detail">
-              <h4>
-                Digian
-              </h4>
+              <span>
+                <img src="images/trasLogo.png" width="100px" height="40px" style="margin-bottom: 10px;">
+              </span>
               <p>
-                Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-                words, combined with a handful
+                Offriamo soluzioni di sviluppo web su misura per le esigenze dei nostri clienti. <br> Contattaci oggi
+                per una consulenza gratuita.
               </p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-2 mx-auto">
-            <div class="info_link_box">
-              <h4>
-                Links
-              </h4>
-              <div class="info_links">
-                <a class="" href="index.html">
-                  Home
-                </a>
-                <a class="" href="about.html">
-                  About
-                </a>
-                <a class="" href="service.html">
-                  Services
-                </a>
-                <a class="" href="contact.html">
-                  Contact Us
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 ">
-            <h4>
-              Subscribe
-            </h4>
-            <form action="#">
-              <input type="text" placeholder="Enter email" />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
-          </div>
+
           <div class="col-md-6 col-lg-3 mb-0 ml-auto">
             <div class="info_contact">
               <h4>
-                Address
+                Indirizzi
               </h4>
               <div class="contact_link_box">
-                <a href="">
+                <a href="https://maps.app.goo.gl/15inPuVQzK2MEq8H6" target="_blank">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
                   <span>
-                    Location
+                    Corso Generale Medici, 138, 91011 Alcamo TP
                   </span>
                 </a>
-                <a href="">
+                <a href="tel:+393275528211">
                   <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span>
-                    Call +01 1234567890
-                  </span>
+                  <span>Davide Noto</span>
                 </a>
-                <a href="">
+                <a href="mailto:davide.noto.work@gmail.com">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
-                  <span>
-                    demo@gmail.com
-                  </span>
+                  <span>mail</span>
                 </a>
               </div>
             </div>
-            <div class="info_social">
+            <!-- <div class="info_social">
               <a href="">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
@@ -668,7 +682,7 @@
               <a href="">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -680,8 +694,9 @@
     <footer class="footer_section">
       <div class="container">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
+          &copy; <span id="displayYear"></span>
+          <a href="https://www.linkedin.com/in/davide-noto-b10370255/" target="_blank">Web Tuned - Dev Solutions |
+            Davide Noto</a>
         </p>
       </div>
     </footer>
@@ -697,6 +712,14 @@
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
+  <script>
+    function smoothScroll(target) {
+      $('html, body').animate({
+        scrollTop: $(target).offset().top - 70 // 70 è un offset per compensare l'altezza della barra di navigazione
+      }, 1000); // 1000 è la durata dell'animazione in millisecondi (1 secondo)
+    }
+  </script>
+
 
 </body>
 
