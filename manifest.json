@@ -1,0 +1,22 @@
+{
+    "name": "Web Tuned",
+    "short_name": "Web Tuned",
+    "description": "Dev Solution",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#056758",
+    "icons": [
+      {
+        "src": "images/iconPhone.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "images/iconPhone.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
