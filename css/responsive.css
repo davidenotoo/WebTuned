@@ -1,6 +1,6 @@
 @media (max-width: 1300px) {
   .footer_container {
-    border-radius: 250px 0 0 0;
+    border-radius: 50px 50px 0 0;
   }
 }
 
@@ -58,7 +58,7 @@
   }
 
   .about_section {
-    border-radius: 150px 0 150px 0;
+    border-radius: 40px;
   }
 
   .about_section .img-box {

@@ -477,7 +477,9 @@ a:focus {
 .about_section {
   background-color: #056758;
   color: #ffffff;
-  border-radius: 250px 0 250px 0;
+  border-radius: 100px ;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .about_section .row {
