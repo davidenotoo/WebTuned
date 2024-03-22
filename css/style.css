@@ -442,10 +442,7 @@ a:focus {
   background-color: #056758;
 }
 
-.service_section .box:hover img {
-  -webkit-filter: invert(1);
-          filter: invert(1);
-}
+
 
 .service_section .btn-box {
   display: -webkit-box;

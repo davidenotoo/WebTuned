@@ -16,3 +16,15 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+  // Funzione per chiudere il menu quando viene cliccato un link
+  function closeMenu() {
+    // Trova il toggle del menu
+    var toggleButton = document.querySelector('.navbar-toggler');
+    // Controlla se il menu è aperto
+    if (toggleButton.getAttribute('aria-expanded') === 'true') {
+      // Chiudi il menu
+      toggleButton.click();
+    }
+  }
+

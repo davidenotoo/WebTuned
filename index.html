@@ -99,20 +99,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#home" onclick="smoothScroll('#home')">Home <span
+                <a class="nav-link" href="#home" onclick="smoothScroll('#home'); closeMenu()">Home <span
                     class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services" onclick="smoothScroll('#services')">Servizi</a>
+                <a class="nav-link" href="#services" onclick="smoothScroll('#services'); closeMenu()">Servizi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about" onclick="smoothScroll('#about')">Chi Siamo</a>
-
+                <a class="nav-link" href="#about" onclick="smoothScroll('#about'); closeMenu()">Chi Siamo</a>
               </li>
-
               <li class="nav-item">
-                <a class="nav-link" href="#contacts" onclick="smoothScroll('#contacts')">Contatti</a>
+                <a class="nav-link" href="#contacts" onclick="smoothScroll('#contacts'); closeMenu()">Contatti</a>
               </li>
+
             </ul>
             <div class="quote_btn-container">
               <a href="#contacts" onclick="smoothScroll('#contacts')" class="quote_btn">
@@ -142,8 +141,10 @@
                       Sito Web su Misura
                     </h1>
                     <p>
-                      Ogni settore ha le proprie esigenze. <br><br>Dal fashion alla tecnologia, sviluppiamo siti web
-                      personalizzati che rispecchiano l'essenza del tuo settore e attraggono il tuo pubblico ideale </p>
+                      <strong> Ogni settore ha le proprie esigenze.</strong> <br><br>Dal fashion alla tecnologia,
+                      sviluppiamo siti web
+                      personalizzati che rispecchiano l'essenza del tuo settore e attraggono il tuo pubblico ideale
+                    </p>
                     <div class="btn-box">
                       <a href="#contacts" onclick="smoothScroll('#contacts')" class="btn1">
                         Contattaci
@@ -196,7 +197,8 @@
                       Design
                     </h1>
                     <p>
-                      La prima impressione conta! <br><br> Con il nostro design su misura, trasforma il tuo sito web in
+                      <strong> La prima impressione conta! </strong><br><br> Con il nostro design su misura, trasforma
+                      il tuo sito web in
                       una
                       vetrina digitale che cattura l'attenzione e lascia un'impressione duratura. <br><br><br>
                     </p>
@@ -629,7 +631,7 @@
               </div>
               <div class="d-flex justify-content-center">
                 <button onclick="inviaOrdine()">
-                  SEND
+                  INVIA
                 </button>
               </div>
             </form>

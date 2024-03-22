@@ -32,7 +32,13 @@
   }
 
   .slider_section {
-    padding: 75px 0;
+    height: auto;
+    padding: 0px 0;
+  }
+
+  .layout_padding {
+    padding-left: 30px; 
+    padding-right: 30px; 
   }
 
   .contact_section .img-box {
@@ -54,7 +60,8 @@
   }
 
   .slider_section .detail-box {
-    margin-top: 45px;
+    max-height: 100%;
+    margin-top: -8vh;
   }
 
   .about_section {
